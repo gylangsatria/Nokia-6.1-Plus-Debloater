@@ -50,7 +50,17 @@ echo %NL%Detected: %DEVICE% (%PRODUCT%)
 echo Firmware: %ID%
 
 echo.
-echo %NL%Hallo sayang (kalo kamu cewek)! Script ini akan melakukan penghapusan aplikasi Bloatware pada perangkat %MODEL%
+echo %NL%Hallo selamat datang di Nokia 6.1 Plus Debloater, script ini dirancang khusus untuk melakukan penghapusan aplikasi bloatware pada perangkat %MODEL%
+
+echo.
+echo. %divider%
+echo. 
+
+echo Github : https://github.com/gylangsatria/Nokia-6.1-Plus-Debloater
+echo Fork from : https://github.com/thanuj10/Nokia-Debloater
+
+echo.
+echo. %divider%
 
 echo.
 pause.
