@@ -3,34 +3,34 @@ This Script is fork from https://github.com/thanuj10/Nokia-Debloater,
 A simple noob-friendly script that debloats your phone from the evenwell apps and soon, Google Apps.
 
 ## Mengenai Script Ini
-Script ini adalah fork dari https://github.com/thanuj10/Nokia-Debloater, saya coba kembangkan kembali dengan menambahkan beberapa aplikasi Bloatware yang hadir secara default di Nokia 6.1 Plus Region Indonesia (Model: TA-1116). 
+Script ini adalah Fork dari https://github.com/thanuj10/Nokia-Debloater, saya coba kembangkan kembali dengan menambahkan beberapa aplikasi Bloatware yang hadir secara default di Nokia 6.1 Plus Region Indonesia (Model: TA-1116). 
 
 ##### Catatan Author (Di alih bahasa-kan dari bahasa Inggris). 
-Author asli dari script ini mencoba untuk menghapus aplikasi bloatware dari ROM China, namun sayangnya aplikasi yang telah dihapus kembali ke posisi semula, tidak ada langkah pasti untuk menghapus aplikasi bloatware kecuali dengan melalui rooting perangkat, sebelum menjalankan script ini, ada baiknya pengguna mengetahui bahwa menggunakan script ini bisa saja merusak salah satu fungsi perangkat pengguna. 
+Author asli dari script ini mencoba untuk menghapus aplikasi bloatware dari ROM China, namun sayangnya aplikasi yang telah dihapus kembali ke posisi semula, tidak ada langkah pasti untuk menghapus aplikasi bloatware kecuali dengan melakukan Root dan menghapus dari Directory asalnya, sebelum menjalankan script ini, ada baiknya pengguna mengetahui bahwa menggunakan script ini bisa saja merusak salah satu fungsi pada perangkat yang pengguna gunakan. 
 
-Jika merasa ada kerusakan pada system, pengguna bisa melakukan Factory Reset atau kembali ke pengaturan awal melalui Recovery Mode. 
+Jika perangkat mengalami kerusakan, fungsi tidak bekerja, atau ada masalah lainnya, pengguna bisa melakukan Factory Reset atau kembali ke pengaturan awal melalui Recovery Mode. 
 
 
 
 ##### Script untuk Linux dan Mac dapat dilihat pada halaman github berikut https://github.com/Sid127/Nokia-Debloater/releases
 
 
-## Apa itu evenwell dan kenapa pengguna harus memperhatikannya?
-Evenwell/FiH adalah perusahaan China. Secara khusus, mereka adalah anak perusahaan dari Grup Besar bernama Foxxconn yang memproduksi elektonik konsumen untuk dijual di seluruh dunia. Grup Evewell ini adalah mitra bisnis Nokia / HMD dan mereka bertanggung jawab untuk membuat perangkat lunak pada ponsel Nokia (dalam kasus ini Nokia 6.1 Plus adalah salah satunya). Secara umum, perangkat Nokia generasi pertama dan kedua tidak memiliki bloatware, namun jika kamu perhatikan dan lihat kembali lebih dalam pada pengaturan (System App), kamu pasti akan menemukan aplikasi Evenwell ini.
+## Apa itu Evenwell dan kenapa pengguna harus memperhatikannya?
+Evenwell/FiH adalah perusahaan yang berbasis di China. Secara khusus, mereka adalah anak perusahaan dari Grup Besar bernama Foxxconn yang memproduksi peralatan elektronik untuk dijual ke seluruh dunia. Grup Evenwell ini bisa dibilang merupakan mitra bisnis Nokia / HMD Global, dan mereka bertanggung jawab untuk membuat perangkat lunak pada ponsel Nokia (dalam kasus ini Nokia 6.1 Plus adalah salah satunya). Secara umum, perangkat Nokia generasi pertama dan kedua tidak memiliki bloatware, namun jika kamu perhatikan dan lihat kembali lebih dalam pada pengaturan (System App), kamu pasti akan menemukan aplikasi Evenwell ini.
 
 
 ## Apa yang aplikasi Evenwell ini kerjakan?
 
-Aplikasi pada dasarnya, harusnya berfungsi untuk menjaga stabilitas sistem dan memperkuat daya tahan baterai di antara berbagai layanan / fitur lainnya. Namun setelah diperhatikan, aplikasi ini juga memiliki telemetri yang mengirim data ke China.
+Aplikasi pada dasarnya, berfungsi untuk menjaga stabilitas sistem dan memperkuat daya tahan baterai di antara berbagai layanan / fitur lainnya. Namun setelah diperhatikan, aplikasi ini juga memiliki telemetri yang mengirim data ke perusahaan mereka.
 
 Saya sudah membahas mengenai hal ini dihalaman blog saya https://www.blogsayugi.com/2020/11/cara-mengatasi-internet-lambat-di.html
 
 **Dan karena itulah script ini dibuat, untuk meningkatkan privasi pengguna dan membuat system lebih baik dibandingkan sebelumnya.**
 
 
-## Nokia seharusnya sudah berhentu untuk menggunakan evenwell services/apps, dan berikut alasan kenapa kita harus menghapus aplikasi ini. 
+## Nokia seharusnya sudah berhenti untuk menggunakan Evenwell services/apps, dan berikut alasan kenapa kita harus menghapus aplikasi ini. 
 
-1. Saya tidak ingin ada aplikasi mati yang telah dihentikan nokia melakukan pengintaian history di sistem saya.
+1. Saya tidak ingin ada aplikasi yang telah dihentikan Nokia melakukan pengintaian history di sistem saya.
 2. Aplikasi tersebut tidak seharusnya ada di perangkat saya sejak awal.
 
 ## Untuk menggunakan Script ini, kamu harus memiliki beberapa hal berikut:
@@ -42,12 +42,12 @@ Saya sudah membahas mengenai hal ini dihalaman blog saya https://www.blogsayugi.
 
 
 # Tutorial Penggunaan
-> Aktifkan USB Debuggin - 
+> Aktifkan USB Debugging - 
 1. Silahkan kamu masuk ke halaman Settings >
 2. Masuk ke **System > About Phone > Build number**
 3. Tekan **Build Number** 7 kali sampai kamu melihat pesan *You are now a developer*.
 4. Selanjutnya, silahkan masuk ke **System > Advanced > Developer options > Enable USB Debugging**
-5. Setelah semuanya disiapkan dan USB Debigging diaktifkan, silahkan kamu beralih ke PC yang sudah kamu siapkan. 
+5. Setelah semuanya disiapkan dan USB Debugging diaktifkan, silahkan kamu beralih ke PC yang sudah kamu siapkan. 
 
 > Menyiapkan Script Debloater
 >	Di PC Windows
@@ -62,13 +62,15 @@ Saya sudah membahas mengenai hal ini dihalaman blog saya https://www.blogsayugi.
 
 *Jika kamu pertama kali menjalankan script ini, kamu mungkinkan akan mendapati pesan error - *No devices/emulators found*, jika iya, pastikan kamu sudah melakukan langkah 7 diatas.
 
+
+
 ## F.A.Q
 
 1. Perlukan melakukan Root dan melakukan Unlock Bootloader?
 > Tidak
 
 2. Apa yang didapatkan dengan script debloater ini?
-> Privasi yang lebih baik, daya tahan battery yang lebih lama, dan performa yang lebih meningkat. 
+> Privasi yang lebih baik, daya tahan battery yang lebih lama, dan peningkatan performa. 
 
 3. Bisakah mengembalikan perubahan dari script ini?
 > Bisa, dan ada beberapa opsi untuk melakukan hal tersebut. 
@@ -81,6 +83,10 @@ Saya sudah membahas mengenai hal ini dihalaman blog saya https://www.blogsayugi.
 
 5. Kemungkinan perangkat akan rusak akibat script ini?
 > Sangat, sangat jarang sekali. 
+
+6. Cara menghapus secara keseluruhan?
+> Sampai saat ini, sayangnya untuk menghapus file APK, kamu harus melakukan root dan menghapus file secara manual di /system/app atau /system/priv-app. 
+
 
 ## To-Do List pengembangan script ini. 
 > Original Script
@@ -98,6 +104,7 @@ Saya sudah membahas mengenai hal ini dihalaman blog saya https://www.blogsayugi.
 - [x] Mengalih bahasa-kan Text Readme dengan penyesuaian untuk perangkat Nokia 6.1 Plus Region Indonesia (Model: TA-1116), untuk model Nokia lain bisa mengikuti sumber https://github.com/thanuj10/Nokia-Debloater
 - [x] Menambahkan aplikasi Babe dan PicMix sebagai daftar aplikasi bloated yang akan dihapus. 
 - [-] Sedang mencari aplikasi bloated lainnya. 
+
 
 
 ## Informasi mengenai hal ini bisa dilihat di
