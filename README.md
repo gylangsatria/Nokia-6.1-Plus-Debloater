@@ -1,6 +1,5 @@
 # Nokia 6.1 Plus - Debloater
-This Script is fork from https://github.com/thanuj10/Nokia-Debloater, 
-A simple noob-friendly script that debloats your phone from the evenwell apps and soon, Google Apps.
+This Script is fork from https://github.com/thanuj10/Nokia-Debloater, and Optimized for Nokia 6.1 Plus (Model: TA-1116).
 
 ## Mengenai Script Ini
 Script ini adalah Fork dari https://github.com/thanuj10/Nokia-Debloater, saya coba kembangkan kembali dengan menambahkan beberapa aplikasi Bloatware yang hadir secara default di Nokia 6.1 Plus Region Indonesia (Model: TA-1116). 
