@@ -114,101 +114,42 @@ echo %NL%Debloating (uninstalling beberapa packages, silahkan tunggu sampai pros
 
 echo.
 adb.exe shell pm uninstall --user 0 com.evenwell.DbgCfgTool
-adb.exe shell pm uninstall --user 0 com.evenwell.DbgCfgTool.overlay.base.s600ww
-adb.exe shell pm uninstall --user 0 com.evenwell.DbgCfgTool.overlay.base.s600id
 adb.exe shell pm uninstall --user 0 com.evenwell.pushagent
-adb.exe shell pm uninstall --user 0 com.evenwell.pushagent.overlay.base.s600ww
-adb.exe shell pm uninstall --user 0 com.evenwell.pushagent.overlay.base.s600id
-adb.exe shell pm uninstall --user 0 com.evenwell.partnerbrowsercustomizations
-adb.exe shell pm uninstall --user 0 com.evenwell.partnerbrowsercustomizations.overlay.base.s600ww
-adb.exe shell pm uninstall --user 0 com.evenwell.partnerbrowsercustomizations.overlay.base.s600id
 adb.exe shell pm uninstall --user 0 com.evenwell.retaildemoapp
-adb.exe shell pm uninstall --user 0 com.evenwell.retaildemoapp.overlay.base.s600ww
-adb.exe shell pm uninstall --user 0 com.evenwell.retaildemoapp.overlay.base.s600id
 adb.exe shell pm uninstall --user 0 com.evenwell.PowerMonitor
-adb.exe shell pm uninstall --user 0 com.evenwell.PowerMonitor.overlay.base.s600ww
-adb.exe shell pm uninstall --user 0 com.evenwell.PowerMonitor.overlay.base.s600id
-adb.exe shell pm uninstall --user 0 com.evenwell.telecom.data.overlay.base.s600ww
-adb.exe shell pm uninstall --user 0 com.evenwell.telecom.data.overlay.base.s600id
 adb.exe shell pm uninstall --user 0 com.evenwell.nps
-adb.exe shell pm uninstall --user 0 com.evenwell.nps.overlay.base.s600ww
-adb.exe shell pm uninstall --user 0 com.evenwell.nps.overlay.base.s600id
 adb.exe shell pm uninstall --user 0 com.evenwell.stbmonitor
-adb.exe shell pm uninstall --user 0 com.evenwell.stbmonitor.data.overlay.base.s600ww
-adb.exe shell pm uninstall --user 0 com.evenwell.stbmonitor.data.overlay.base.s600id
 adb.exe shell pm uninstall --user 0 com.evenwell.stbmonitor.data.overlay.base
 adb.exe shell pm uninstall --user 0 com.evenwell.autoregistration
-adb.exe shell pm uninstall --user 0 com.evenwell.autoregistration.overlay.base.s600ww
-adb.exe shell pm uninstall --user 0 com.evenwell.autoregistration.overlay.base.s600id
 adb.exe shell pm uninstall --user 0 com.evenwell.batteryprotect
-adb.exe shell pm uninstall --user 0 com.evenwell.batteryprotect.overlay.base.s600ww
-adb.exe shell pm uninstall --user 0 com.evenwell.batteryprotect.overlay.base.s600id
 adb.exe shell pm uninstall --user 0 com.evenwell.dataagent
-adb.exe shell pm uninstall --user 0 com.evenwell.dataagent.overlay.base.s600ww
-adb.exe shell pm uninstall --user 0 com.evenwell.dataagent.overlay.base.s600id
-adb.exe shell pm uninstall --user 0 com.evenwell.powersaving.g3
-adb.exe shell pm uninstall --user 0 com.evenwell.powersaving.g3.overlay.base.s600ww
-adb.exe shell pm uninstall --user 0 com.evenwell.powersaving.g3.overlay.base.s600id
-adb.exe shell pm uninstall --user 0 com.evenwell.custmanager
-adb.exe shell pm uninstall --user 0 com.evenwell.custmanager.data.overlay.base.s600ww
-adb.exe shell pm uninstall --user 0 com.evenwell.custmanager.data.overlay.base.s600id
-adb.exe shell pm uninstall --user 0 com.evenwell.CPClient
-adb.exe shell pm uninstall --user 0 com.evenwell.CPClient.overlay.base.s600ww
-adb.exe shell pm uninstall --user 0 com.evenwell.CPClient.overlay.base.s600id
-adb.exe shell pm uninstall --user 0 com.evenwell.AprUploadService
-adb.exe shell pm uninstall --user 0 com.evenwell.AprUploadService.data.overlay.base.s600ww
-adb.exe shell pm uninstall --user 0 com.evenwell.AprUploadService.data.overlay.base.s600id
-adb.exe shell pm uninstall --user 0 com.evenwell.pushagent
-adb.exe shell pm uninstall --user 0 com.evenwell.pushagent.overlay.base.s600ww
-adb.exe shell pm uninstall --user 0 com.evenwell.pushagent.overlay.base.s600id
-adb.exe shell pm uninstall --user 0 com.evenwell.managedprovisioning
-adb.exe shell pm uninstall --user 0 com.evenwell.managedprovisioning.overlay.base.s600ww
-adb.exe shell pm uninstall --user 0 com.evenwell.managedprovisioning.overlay.base.s600id
-adb.exe shell pm uninstall --user 0 com.evenwell.DeviceMonitorControl
-adb.exe shell pm uninstall --user 0 com.evenwell.DeviceMonitorControl.data.overlay.base.s600ww
-adb.exe shell pm uninstall --user 0 com.evenwell.DeviceMonitorControl.data.overlay.base.s600id
-adb.exe shell pm uninstall --user 0 com.evenwell.PowerMonitor.overlay.base
-adb.exe shell pm uninstall --user 0 com.evenwell.autoregistration.overlay.d.base.s600ww
-adb.exe shell pm uninstall --user 0 com.evenwell.autoregistration.overlay.d.base.s600id
-adb.exe shell pm uninstall --user 0 com.evenwell.nps.overlay.base
 adb.exe shell pm uninstall --user 0 com.evenwell.AprUploadService.data.overlay.base
-adb.exe shell pm uninstall --user 0 com.evenwell.partnerbrowsercustomizations.overlay.base
-adb.exe shell pm uninstall --user 0 com.evenwell.telecom.data.overlay.base
-adb.exe shell pm uninstall --user 0 com.evenwell.custmanager.data.overlay.base
-adb.exe shell pm uninstall --user 0 com.evenwell.stbmonitor.data.overlay.base
-adb.exe shell pm uninstall --user 0 com.evenwell.retaildemoapp.overlay.base
 adb.exe shell pm uninstall --user 0 com.evenwell.CPClient.overlay.base
-adb.exe shell pm uninstall --user 0 com.evenwell.DeviceMonitorControl.data.overlay.base
 adb.exe shell pm uninstall --user 0 com.evenwell.DbgCfgTool.overlay.base
-adb.exe shell pm uninstall --user 0 com.evenwell.batteryprotect.overlay.base
-adb.exe shell pm uninstall --user 0 com.evenwell.dataagent.overlay.base
-adb.exe shell pm uninstall --user 0 com.evenwell.mappartner
-adb.exe shell pm uninstall --user 0 com.evenwell.pushagent.overlay.base
-adb.exe shell pm uninstall --user 0 com.evenwell.managedprovisioning.overlay.base
-adb.exe shell pm uninstall --user 0 com.evenwell.autoregistration.overlay.base
-adb.exe shell pm uninstall --user 0 com.evenwell.pandorasbox.app
-adb.exe shell pm uninstall --user 0 com.evenwell.pandorasbox
-adb.exe shell pm uninstall --user 0 com.evenwell.UsageStatsLogReceiver.data.overlay.base.s600ww
-adb.exe shell pm uninstall --user 0 com.evenwell.UsageStatsLogReceiver.data.overlay.base.s600id
-adb.exe shell pm uninstall --user 0 com.evenwell.UsageStatsLogReceiver
-adb.exe shell pm uninstall --user 0 com.evenwell.batteryprotect.overlay.d.base.s600e0
-adb.exe shell pm uninstall --user 0 com.evenwell.powersaving.g3.overlay.d.base.s600e0
-adb.exe shell pm uninstall --user 0 com.evenwell.whitebalance
-adb.exe shell pm uninstall --user 0 com.evenwell.whitebalance.overlay.base
-adb.exe shell pm uninstall --user 0 com.evenwell.fqc
-adb.exe shell pm uninstall --user 0 com.evenwell.SetupWizard
-adb.exe shell pm uninstall --user 0 com.evenwell.SetupWizard.overlay.d.base.s600ww
-adb.exe shell pm uninstall --user 0 com.evenwell.factorywizard
-adb.exe shell pm uninstall --user 0 com.evenwell.factorywizard.overlay.base
-adb.exe shell pm uninstall --user 0 com.evenwell.foxlauncher.partner
-adb.exe shell pm uninstall --user 0 com.hmdglobal.datago
-adb.exe shell pm uninstall --user 0 com.hmdglobal.datago.overlay.base
-adb.exe shell pm uninstall --user 0 com.evenwell.phone.overlay.base
+adb.exe shell pm uninstall --user 0 com.evenwell.DeviceMonitorControl.data.overlay.base
+adb.exe shell pm uninstall --user 0 com.evenwell.PowerMonitor.overlay.base
 adb.exe shell pm uninstall --user 0 com.evenwell.SetupWizard.overlay.base
-adb.exe shell pm uninstall --user 0 com.evenwell.powersaving.g3.overlay.d.base.s600id
-adb.exe shell pm uninstall --user 0 com.evenwell.powersaving.g3.overlay.base
-adb.exe shell pm uninstall --user 0 com.evenwell.batteryprotect.overlay.d.base.s600id
-adb.exe shell pm uninstall --user 0 com.evenwell.nps.overlay.d.base.s600id
+adb.exe shell pm uninstall --user 0 com.evenwell.SetupWizard.overlay.d.base.s600id
+adb.exe shell pm uninstall --user 0 com.evenwell.autoregistration.overlay.base
+adb.exe shell pm uninstall --user 0 com.evenwell.batteryprotect.overlay.base
+adb.exe shell pm uninstall --user 0 com.evenwell.bokeheditor.overlay.base
+adb.exe shell pm uninstall --user 0 com.evenwell.custmanager.data.overlay.base
+adb.exe shell pm uninstall --user 0 com.evenwell.dataagent.overlay.base
+adb.exe shell pm uninstall --user 0 com.evenwell.factorywizard.overlay.base
+adb.exe shell pm uninstall --user 0 com.evenwell.fmradio.overlay.base
+adb.exe shell pm uninstall --user 0 com.evenwell.fmradio.overlay.d.base.s600id
+adb.exe shell pm uninstall --user 0 com.evenwell.legalterm.overlay.base
+adb.exe shell pm uninstall --user 0 com.evenwell.managedprovisioning.overlay.base
+adb.exe shell pm uninstall --user 0 com.evenwell.nps.overlay.base
+adb.exe shell pm uninstall --user 0 com.evenwell.partnerbrowsercustomizations.overlay.base
+adb.exe shell pm uninstall --user 0 com.evenwell.phone.overlay.base
+adb.exe shell pm uninstall --user 0 com.evenwell.phone.overlay.d.base.s600id
+adb.exe shell pm uninstall --user 0 com.evenwell.pushagent.overlay.base
+adb.exe shell pm uninstall --user 0 com.evenwell.retaildemoapp.overlay.base
+adb.exe shell pm uninstall --user 0 com.evenwell.settings.data.overlay.base
+adb.exe shell pm uninstall --user 0 com.evenwell.settings.data.overlay.d.base.s600id
+adb.exe shell pm uninstall --user 0 com.evenwell.telecom.data.overlay.base
+adb.exe shell pm uninstall --user 0 com.evenwell.telecom.data.overlay.d.base.s600id
 
 echo %NL%Jika status "Success" penghapusan selesai, jika status "Failure" aplikasi tidak tersedia/terinstall. %NL%Silahkan klik tombol apapun untuk merestart perangkat . . .
 
@@ -326,101 +267,42 @@ echo %NL%Reinstalling the debloated evenwell creepy apps back to your %MODEL% . 
 
 echo.
 adb.exe shell cmd package install-existing --user 0 com.evenwell.DbgCfgTool
-adb.exe shell cmd package install-existing --user 0 com.evenwell.DbgCfgTool.overlay.base.s600ww
-adb.exe shell cmd package install-existing --user 0 com.evenwell.DbgCfgTool.overlay.base.s600id
+adb.exe shell cmd package install-existing --user 0 com.evenwell.DbgCfgTool.overlay.base
 adb.exe shell cmd package install-existing --user 0 com.evenwell.pushagent
-adb.exe shell cmd package install-existing --user 0 com.evenwell.pushagent.overlay.base.s600ww
-adb.exe shell cmd package install-existing --user 0 com.evenwell.pushagent.overlay.base.s600id
-adb.exe shell cmd package install-existing --user 0 com.evenwell.partnerbrowsercustomizations
-adb.exe shell cmd package install-existing --user 0 com.evenwell.partnerbrowsercustomizations.overlay.base.s600ww
-adb.exe shell cmd package install-existing --user 0 com.evenwell.partnerbrowsercustomizations.overlay.base.s600id
+adb.exe shell cmd package install-existing --user 0 com.evenwell.pushagent.overlay.base
+adb.exe shell cmd package install-existing --user 0 com.evenwell.partnerbrowsercustomizations.overlay.base
 adb.exe shell cmd package install-existing --user 0 com.evenwell.retaildemoapp
-adb.exe shell cmd package install-existing --user 0 com.evenwell.retaildemoapp.overlay.base.s600ww
-adb.exe shell cmd package install-existing --user 0 com.evenwell.retaildemoapp.overlay.base.s600id
+adb.exe shell cmd package install-existing --user 0 com.evenwell.retaildemoapp.overlay.base x
 adb.exe shell cmd package install-existing --user 0 com.evenwell.PowerMonitor
-adb.exe shell cmd package install-existing --user 0 com.evenwell.PowerMonitor.overlay.base.s600ww
-adb.exe shell cmd package install-existing --user 0 com.evenwell.PowerMonitor.overlay.base.s600id
+adb.exe shell cmd package install-existing --user 0 com.evenwell.PowerMonitor.overlay.base
 adb.exe shell cmd package install-existing --user 0 com.evenwell.telecom.data.overlay.base.s600ww
 adb.exe shell cmd package install-existing --user 0 com.evenwell.telecom.data.overlay.base.s600id
 adb.exe shell cmd package install-existing --user 0 com.evenwell.nps
-adb.exe shell cmd package install-existing --user 0 com.evenwell.nps.overlay.base.s600ww
-adb.exe shell cmd package install-existing --user 0 com.evenwell.nps.overlay.base.s600id
+adb.exe shell cmd package install-existing --user 0 com.evenwell.nps.overlay.base
 adb.exe shell cmd package install-existing --user 0 com.evenwell.stbmonitor
-adb.exe shell cmd package install-existing --user 0 com.evenwell.stbmonitor.data.overlay.base.s600ww
-adb.exe shell cmd package install-existing --user 0 com.evenwell.stbmonitor.data.overlay.base.s600id
 adb.exe shell cmd package install-existing --user 0 com.evenwell.stbmonitor.data.overlay.base
 adb.exe shell cmd package install-existing --user 0 com.evenwell.autoregistration
-adb.exe shell cmd package install-existing --user 0 com.evenwell.autoregistration.overlay.base.s600ww
-adb.exe shell cmd package install-existing --user 0 com.evenwell.autoregistration.overlay.base.s600id
+adb.exe shell cmd package install-existing --user 0 com.evenwell.autoregistration.overlay.base
 adb.exe shell cmd package install-existing --user 0 com.evenwell.batteryprotect
-adb.exe shell cmd package install-existing --user 0 com.evenwell.batteryprotect.overlay.base.s600ww
-adb.exe shell cmd package install-existing --user 0 com.evenwell.batteryprotect.overlay.base.s600id
+adb.exe shell cmd package install-existing --user 0 com.evenwell.batteryprotect.overlay.base
 adb.exe shell cmd package install-existing --user 0 com.evenwell.dataagent
-adb.exe shell cmd package install-existing --user 0 com.evenwell.dataagent.overlay.base.s600ww
-adb.exe shell cmd package install-existing --user 0 com.evenwell.dataagent.overlay.base.s600id
-adb.exe shell cmd package install-existing --user 0 com.evenwell.powersaving.g3
-adb.exe shell cmd package install-existing --user 0 com.evenwell.powersaving.g3.overlay.base.s600ww
-adb.exe shell cmd package install-existing --user 0 com.evenwell.powersaving.g3.overlay.base.s600id
-adb.exe shell cmd package install-existing --user 0 com.evenwell.custmanager
-adb.exe shell cmd package install-existing --user 0 com.evenwell.custmanager.data.overlay.base.s600ww
-adb.exe shell cmd package install-existing --user 0 com.evenwell.custmanager.data.overlay.base.s600id
-adb.exe shell cmd package install-existing --user 0 com.evenwell.CPClient
-adb.exe shell cmd package install-existing --user 0 com.evenwell.CPClient.overlay.base.s600ww
-adb.exe shell cmd package install-existing --user 0 com.evenwell.CPClient.overlay.base.s600id
-adb.exe shell cmd package install-existing --user 0 com.evenwell.AprUploadService
-adb.exe shell cmd package install-existing --user 0 com.evenwell.AprUploadService.data.overlay.base.s600ww
-adb.exe shell cmd package install-existing --user 0 com.evenwell.AprUploadService.data.overlay.base.s600id
-adb.exe shell cmd package install-existing --user 0 com.evenwell.pushagent
-adb.exe shell cmd package install-existing --user 0 com.evenwell.pushagent.overlay.base.s600ww
-adb.exe shell cmd package install-existing --user 0 com.evenwell.pushagent.overlay.base.s600id
-adb.exe shell cmd package install-existing --user 0 com.evenwell.managedprovisioning
-adb.exe shell cmd package install-existing --user 0 com.evenwell.managedprovisioning.overlay.base.s600ww
-adb.exe shell cmd package install-existing --user 0 com.evenwell.managedprovisioning.overlay.base.s600id
-adb.exe shell cmd package install-existing --user 0 com.evenwell.DeviceMonitorControl
-adb.exe shell cmd package install-existing --user 0 com.evenwell.DeviceMonitorControl.data.overlay.base.s600ww
-adb.exe shell cmd package install-existing --user 0 com.evenwell.DeviceMonitorControl.data.overlay.base.s600id
-adb.exe shell cmd package install-existing --user 0 com.evenwell.PowerMonitor.overlay.base
-adb.exe shell cmd package install-existing --user 0 com.evenwell.autoregistration.overlay.d.base.s600ww
-adb.exe shell cmd package install-existing --user 0 com.evenwell.autoregistration.overlay.d.base.s600id
-adb.exe shell cmd package install-existing --user 0 com.evenwell.nps.overlay.base
+adb.exe shell cmd package install-existing --user 0 com.evenwell.dataagent.overlay.base
 adb.exe shell cmd package install-existing --user 0 com.evenwell.AprUploadService.data.overlay.base
-adb.exe shell cmd package install-existing --user 0 com.evenwell.partnerbrowsercustomizations.overlay.base
-adb.exe shell cmd package install-existing --user 0 com.evenwell.telecom.data.overlay.base
-adb.exe shell cmd package install-existing --user 0 com.evenwell.custmanager.data.overlay.base
-adb.exe shell cmd package install-existing --user 0 com.evenwell.stbmonitor.data.overlay.base
-adb.exe shell cmd package install-existing --user 0 com.evenwell.retaildemoapp.overlay.base
 adb.exe shell cmd package install-existing --user 0 com.evenwell.CPClient.overlay.base
 adb.exe shell cmd package install-existing --user 0 com.evenwell.DeviceMonitorControl.data.overlay.base
-adb.exe shell cmd package install-existing --user 0 com.evenwell.DbgCfgTool.overlay.base
-adb.exe shell cmd package install-existing --user 0 com.evenwell.batteryprotect.overlay.base
-adb.exe shell cmd package install-existing --user 0 com.evenwell.dataagent.overlay.base
-adb.exe shell cmd package install-existing --user 0 com.evenwell.mappartner
-adb.exe shell cmd package install-existing --user 0 com.evenwell.pushagent.overlay.base
-adb.exe shell cmd package install-existing --user 0 com.evenwell.managedprovisioning.overlay.base
-adb.exe shell cmd package install-existing --user 0 com.evenwell.autoregistration.overlay.base
-adb.exe shell cmd package install-existing --user 0 com.evenwell.pandorasbox.app
-adb.exe shell cmd package install-existing --user 0 com.evenwell.pandorasbox
-adb.exe shell cmd package install-existing --user 0 com.evenwell.UsageStatsLogReceiver.data.overlay.base.s600ww
-adb.exe shell cmd package install-existing --user 0 com.evenwell.UsageStatsLogReceiver.data.overlay.base.s600id
-adb.exe shell cmd package install-existing --user 0 com.evenwell.UsageStatsLogReceiver
-adb.exe shell cmd package install-existing --user 0 com.evenwell.batteryprotect.overlay.d.base.s600e0
-adb.exe shell cmd package install-existing --user 0 com.evenwell.powersaving.g3.overlay.d.base.s600e0
-adb.exe shell cmd package install-existing --user 0 com.evenwell.whitebalance
-adb.exe shell cmd package install-existing --user 0 com.evenwell.whitebalance.overlay.base
-adb.exe shell cmd package install-existing --user 0 com.evenwell.fqc
-adb.exe shell cmd package install-existing --user 0 com.evenwell.SetupWizard
-adb.exe shell cmd package install-existing --user 0 com.evenwell.SetupWizard.overlay.d.base.s600ww
-adb.exe shell cmd package install-existing --user 0 com.evenwell.factorywizard
-adb.exe shell cmd package install-existing --user 0 com.evenwell.factorywizard.overlay.base
-adb.exe shell cmd package install-existing --user 0 com.evenwell.foxlauncher.partner
-adb.exe shell cmd package install-existing --user 0 com.hmdglobal.datago
-adb.exe shell cmd package install-existing --user 0 com.hmdglobal.datago.overlay.base
-adb.exe shell cmd package install-existing --user 0 com.evenwell.phone.overlay.base
 adb.exe shell cmd package install-existing --user 0 com.evenwell.SetupWizard.overlay.base
-adb.exe shell cmd package install-existing --user 0 com.evenwell.powersaving.g3.overlay.d.base.s600id
-adb.exe shell cmd package install-existing --user 0 com.evenwell.powersaving.g3.overlay.base
-adb.exe shell cmd package install-existing --user 0 com.evenwell.batteryprotect.overlay.d.base.s600id
-adb.exe shell cmd package install-existing --user 0 com.evenwell.nps.overlay.d.base.s600id
+adb.exe shell cmd package install-existing --user 0 com.evenwell.SetupWizard.overlay.d.base.s600id
+adb.exe shell cmd package install-existing --user 0 com.evenwell.bokeheditor.overlay.base
+adb.exe shell cmd package install-existing --user 0 com.evenwell.custmanager.data.overlay.base
+adb.exe shell cmd package install-existing --user 0 com.evenwell.factorywizard.overlay.base
+adb.exe shell cmd package install-existing --user 0 com.evenwell.fmradio.overlay.base
+adb.exe shell cmd package install-existing --user 0 com.evenwell.fmradio.overlay.d.base.s600id
+adb.exe shell cmd package install-existing --user 0 com.evenwell.legalterm.overlay.base
+adb.exe shell cmd package install-existing --user 0 com.evenwell.managedprovisioning.overlay.base
+adb.exe shell cmd package install-existing --user 0 com.evenwell.phone.overlay.base
+adb.exe shell cmd package install-existing --user 0 com.evenwell.phone.overlay.d.base.s600id
+adb.exe shell cmd package install-existing --user 0 com.evenwell.data.overlay.base
+adb.exe shell cmd package install-existing --user 0 com.evenwell.data.overlay.d.base.s600id
 
 echo %NL%The rebloating process is now finished. Press any key to reboot your phone . . .
 
