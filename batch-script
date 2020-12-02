@@ -3,7 +3,7 @@ cls
 set NLM=^
 
 
-set NL=^^^%NLM%%NLM%^%NLM%%NLM%
+set NL=^^^%NLM%%NLM%^%NLM%%NLM%%NLM%
 
 SET divider=****************
 
@@ -49,7 +49,7 @@ for /F "delims=" %%a in ('adb.exe shell getprop ro.build.id') do set ID=%%a
 echo %NL%Detected: %DEVICE% (%PRODUCT%)
 echo Firmware: %ID%
 
-echo %NL%Hallo sayang (kalo kamu cewek)! Script ini akan melakukan menghapus aplikasi Bloatware pada perangkat %MODEL%
+echo %NL%Hallo sayang (kalo kamu cewek)! Script ini akan melakukan penghapusan aplikasi Bloatware pada perangkat %MODEL%
 
 echo.
 pause.
@@ -86,7 +86,7 @@ cls
 echo %NL%Debloat
 echo 1.Stock Nokia
 echo 2.Custom
-echo 3.Babe & PicMix
+echo 3.Babe dan PicMix
 echo 0.Back
 
 echo.
@@ -94,7 +94,7 @@ set /p choice= Enter your option:
 
 if '%choice%'=='1' goto evenwell
 if '%choice%'=='2' goto custom
-if '%choice%'=='3' goto Babe
+if '%choice%'=='3' goto babe
 if '%choice%'=='0' goto menu
 
 goto Debloat
@@ -112,7 +112,7 @@ if "%BRAND%" NEQ "Nokia" (
 	goto Debloat
 )
 
-echo PENGINGAT: Menggunakan script ini berarti kamu sendiri bertanggung jawab atas apa yang kamu lakukan di perangkat %MODEL%%NL%I, segala hal, kerusakan, kehilangan data dan lainnya bukan sepenuhnya tanggung jawab pembuat script
+echo PENGINGAT: Menggunakan script ini berarti kamu sendiri bertanggung jawab atas apa yang kamu lakukan di perangkat %MODEL%%NL%, segala hal, kerusakan, kehilangan data dan lainnya bukan sepenuhnya tanggung jawab pembuat script
 
 echo.
 pause
@@ -233,7 +233,7 @@ exit
 :custom
 cls
 
-echo PENGINGAT: Menggunakan script ini berarti kamu sendiri bertanggung jawab atas apa yang kamu lakukan di perangkat %MODEL%%NL%I, segala hal, kerusakan, kehilangan data dan lainnya bukan sepenuhnya tanggung jawab pembuat script
+echo PENGINGAT: Menggunakan script ini berarti kamu sendiri bertanggung jawab atas apa yang kamu lakukan di perangkat %MODEL%%NL%, segala hal, kerusakan, kehilangan data dan lainnya bukan sepenuhnya tanggung jawab pembuat script
 
 echo.
 pause
@@ -277,7 +277,7 @@ exit
 
 ----------------------------------------------------
 
-:Babe
+:babe
 cls
 
 if "%BRAND%" NEQ "Nokia" (
@@ -288,7 +288,7 @@ if "%BRAND%" NEQ "Nokia" (
 	goto Debloat
 )
 
-echo PENGINGAT: Menggunakan script ini berarti kamu sendiri bertanggung jawab atas apa yang kamu lakukan di perangkat %MODEL%%NL%I, segala hal, kerusakan, kehilangan data dan lainnya bukan sepenuhnya tanggung jawab pembuat script
+echo PENGINGAT: Menggunakan script ini berarti kamu sendiri bertanggung jawab atas apa yang kamu lakukan di perangkat %MODEL%%NL%, segala hal, kerusakan, kehilangan data dan lainnya bukan sepenuhnya tanggung jawab pembuat script
 
 echo.
 pause
