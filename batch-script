@@ -2,20 +2,19 @@
 cls
 set NLM=^
 
-
-set NL=^^^%NLM%%NLM%^%NLM%%NLM%%NLM%
+set NL=^^^%NLM%%NLM%^%NLM%%NLM%
 
 SET divider=****************
 
 if not exist adb.exe (
 	echo %NL%%divider%
-	echo Unable to find adb. Please make sure you've installed ADB and this script is in adb platform-tools folder%NL%before running this script
+	echo adb tidak ditemukan. Pastikan kamu sudah mendownload dan menginstall adb dan memasukan file script pada folder adb
 	echo %divider%
 	pause
 	EXIT /B 0
 )
 
-echo %NL%Checking connected device(s) . . .
+echo %NL%Melakukan pengecekan perangkat(s) . . .
 
 adb.exe devices > devices.txt
 if "%1"=="-v" (
@@ -84,7 +83,7 @@ goto menu
 cls
 
 echo %NL%Debloat
-echo 1.Stock Nokia
+echo 1.Evenwell
 echo 2.Custom
 echo 3.Babe dan PicMix
 echo 0.Back
@@ -103,14 +102,6 @@ goto Debloat
 
 :evenwell
 cls
-
-if "%BRAND%" NEQ "Nokia" (
-	echo %NL%%divider%
-	 ECHO Aplikasi Evenwell mungkin tidak ada diperangkat kamu. Membatalkan misi...
- 	echo %divider%
-	pause
-	goto Debloat
-)
 
 echo PENGINGAT: Menggunakan script ini berarti kamu sendiri bertanggung jawab atas apa yang kamu lakukan di perangkat %MODEL%%NL%, segala hal, kerusakan, kehilangan data dan lainnya bukan sepenuhnya tanggung jawab pembuat script
 
@@ -280,14 +271,6 @@ exit
 :babe
 cls
 
-if "%BRAND%" NEQ "Nokia" (
-	echo %NL%%divider%
-	 ECHO Aplikasi Babe dan PicMix mungkin tidak ada diperangkat kamu. Membatalkan misi...
- 	echo %divider%
-	pause
-	goto Debloat
-)
-
 echo PENGINGAT: Menggunakan script ini berarti kamu sendiri bertanggung jawab atas apa yang kamu lakukan di perangkat %MODEL%%NL%, segala hal, kerusakan, kehilangan data dan lainnya bukan sepenuhnya tanggung jawab pembuat script
 
 echo.
@@ -316,8 +299,9 @@ exit
 cls
 
 echo %NL%Rebloat
-echo 1.Stock Nokia
+echo 1.Evenwell Stock Nokia
 echo 2.Custom
+echo 3.Babe
 echo 0.Back
 
 echo.
@@ -325,6 +309,7 @@ set /p choice= Enter your option:
 
 if '%choice%'=='1' goto evenwell2
 if '%choice%'=='2' goto custom2
+if '%choice%'=='3' goto babe2
 if '%choice%'=='0' goto menu
 
 goto Rebloat
@@ -333,14 +318,6 @@ goto Rebloat
 
 :evenwell2
 cls
-
-if "%BRAND%" NEQ "Nokia" (
- echo %divider%
-	 ECHO You probably don't need Evenwell bloatware. Aborting...
- echo %divider%
- pause
- goto Rebloat
-)
 
 echo %NL%Reinstalling the debloated evenwell creepy apps back to your %MODEL% . . .
 
@@ -495,6 +472,29 @@ echo.
 exit
 
 --------------------------------------------------------
+
+:babe2
+cls
+
+
+echo %NL%Reinstalling aplikasi Babe dan PicMix pada perangkat %MODEL% . . .
+
+echo.
+adb.exe shell cmd package install-existing --user 0 id.co.babe
+adb.exe shell cmd package install-existing --user 0 com.picmix.mobile
+
+echo %NL%Reinstalling telah selesai, silahkan klik tombol apapun untuk melakukan restart perangkat . . .
+
+pause>nul
+
+echo %NL%Perangkat kamu melakukan restartE . . .
+adb.exe shell reboot
+
+echo.
+exit
+
+--------------------------------------------------------
+
 :Disable Duraspeed
 cls
 echo.
