@@ -94,7 +94,7 @@ set /p choice= Enter your option:
 
 if '%choice%'=='1' goto evenwell
 if '%choice%'=='2' goto custom
-if '%choice%'=='3' goto Babe dan PicMix
+if '%choice%'=='3' goto Babe
 if '%choice%'=='0' goto menu
 
 goto Debloat
@@ -275,6 +275,41 @@ adb.exe reboot
 echo.
 exit
 
+----------------------------------------------------
+
+:Babe
+cls
+
+if "%BRAND%" NEQ "Nokia" (
+	echo %NL%%divider%
+	 ECHO Aplikasi Babe dan PicMix mungkin tidak ada diperangkat kamu. Membatalkan misi...
+ 	echo %divider%
+	pause
+	goto Debloat
+)
+
+echo PENGINGAT: Menggunakan script ini berarti kamu sendiri bertanggung jawab atas apa yang kamu lakukan di perangkat %MODEL%%NL%I, segala hal, kerusakan, kehilangan data dan lainnya bukan sepenuhnya tanggung jawab pembuat script
+
+echo.
+pause
+
+echo %NL%Debloating (uninstalling Babe dan PicMix, silahkan tunggu sampai proses ini selesai)...
+
+echo.
+adb.exe shell pm uninstall --user 0 id.co.babe
+adb.exe shell pm uninstall --user 0 com.picmix.mobile
+
+echo %NL%Penghapusan selesai. Jika kamu mau, silahkan aktifkan mode silent agar suara Startup Nokia tidak terdengar, %NL%Silahkan klik tombol apapun untuk merestart perangkat . . .
+
+pause>nul
+
+echo %NL%Restarting . . .
+
+echo.
+adb.exe reboot
+
+echo.
+exit
 ----------------------------------------------------
 
 :Rebloat
