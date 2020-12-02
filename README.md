@@ -123,9 +123,9 @@ Saya sudah membahas mengenai hal ini dihalaman blog saya https://www.blogsayugi.
 - https://www.blogsayugi.com/2020/11/cara-mengatasi-internet-lambat-di.html
 (**Saya sudah membahas mengenai masalah bloatware system yang melambatkan koneksi internet saya**)
 
-#Thanks to 
+##Thanks to 
 - Thanuj10 for creating this Script - https://github.com/thanuj10/Nokia-Debloater
 - Sid127 for Linux/Mac Version - https://github.com/Sid127/Nokia-Debloater/releases
-- And other developer and Nokia Users. 
+- Other developers and Nokia Device Users. 
 
 
