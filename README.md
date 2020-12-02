@@ -1,87 +1,89 @@
-# Nokia-Debloater
+# Nokia 6.1 Plus - Debloater
+This Script is fork from https://github.com/thanuj10/Nokia-Debloater, 
 A simple noob-friendly script that debloats your phone from the evenwell apps and soon, Google Apps.
 
-##### Author's Note - I tried adding apps to debloat from the Chinese ROM, Unfortunately they come back into the system after debloating. Hence, There is no way to remove these apps other than rooting. Please do not try using the Global ROM's script on Chinese devices, You could potentially brick your phone and your only option to recover will be factory resetting.
+## Mengenai Script Ini
+Script ini adalah fork dari https://github.com/thanuj10/Nokia-Debloater, saya coba kembangkan kembali dengan menambahkan beberapa aplikasi Bloatware yang hadir secara default di Nokia 6.1 Plus Region Indonesia (Model: TA-1116). 
 
-##### For the Linux/Mac Version of this script, Head to - https://github.com/Sid127/Nokia-Debloater/releases
+##### Catatan Author (Di alih bahasa-kan dari bahasa Inggris). 
+Author asli dari script ini mencoba untuk menghapus aplikasi bloatware dari ROM China, namun sayangnya aplikasi yang telah dihapus kembali ke posisi semula, tidak ada langkah pasti untuk menghapus aplikasi bloatware kecuali dengan melalui rooting perangkat, sebelum menjalankan script ini, ada baiknya pengguna mengetahui bahwa menggunakan script ini bisa saja merusak salah satu fungsi perangkat pengguna. 
 
-## What is evenwell and why should I care?
-Evenwell/FiH is chinese company. Specifically, They are a subsidary of the massive Foxxconn group that manufactures consumer electronics for sale around the world. 
-This Evewell group were a business partner of Nokia/HMD and they were responsible for manufacturing and building the software on these phones. On the surface, The first and second generation Nokia devices have no bloat, But when you go digging deeper into settings and the system, You will encounter these evenwell apps. 
-
-
-## What do these apps do?
-These apps are supposedly to maintain system stability and protect battery among various other services/features. There are also telemetry apps that send data to the chinese. 
-**This is the reason this script has been created.**
+Jika merasa ada kerusakan pada system, pengguna bisa melakukan Factory Reset atau kembali ke pengaturan awal melalui Recovery Mode. 
 
 
-## Nokia has supposedly stopped using the evenwell services/apps, Why would you uninstall them?
-Simple, Because -
-1. I do not want any dead app that previously had an history of snooping in my system.
-2. They are not supposed to be there in the first place.
+
+##### Script untuk Linux dan Mac dapat dilihat pada halaman github berikut https://github.com/Sid127/Nokia-Debloater/releases
 
 
-## Okay, You've convinced me. What do I need?
-1. A Nokia phone
-2. ADB/Platform tools from Google which you can get from here - https://developer.android.com/studio/releases/platform-tools
-3. The Debloater script
-4. Windows 10, If you're on Windows 7 or below download Adb/Fastboot tools version v28.0.01 or below.
+## Apa itu evenwell dan kenapa pengguna harus memperhatikannya?
+Evenwell/FiH adalah perusahaan China. Secara khusus, mereka adalah anak perusahaan dari Grup Besar bernama Foxxconn yang memproduksi elektonik konsumen untuk dijual di seluruh dunia. Grup Evewell ini adalah mitra bisnis Nokia / HMD dan mereka bertanggung jawab untuk membuat perangkat lunak pada ponsel Nokia (dalam kasus ini Nokia 6.1 Plus adalah salah satunya). Secara umum, perangkat Nokia generasi pertama dan kedua tidak memiliki bloatware, namun jika kamu perhatikan dan lihat kembali lebih dalam pada pengaturan (System App), kamu pasti akan menemukan aplikasi Evenwell ini.
 
 
-# USAGE
-> Prepping your phone - 
-1. Navigate to settings
-2. Go to **System > About Phone > Build number**
-3. Tap on **Build Number** 7 times or untill you see the *You are now a developer* toast message.
-4. Now, Go back to **System > Advanced > Developer options > Enable USB Debugging**
-5. Once enabled, Go to your PC
+## Apa yang aplikasi Evenwell ini kerjakan?
 
-> Prepping the script and ADB
->	On Windows
-1. Download ADB from the the link above
->  If Chrome labels it as a harmful file, Select on "Keep". I can 100% assure you this is not a harmful file.
-2. Extract the contents of the .zip into a folder named adb. (***BE SURE TO EXTRACT EVERYTHING FROM THE .ZIP INTO THE FOLDER***)
-3. Download the script from the releases section
-4. Move the script into the folder where you have extracted the platform tool/ADB
-5. Connect phone to your PC
-6. Double click "batch-script" and run
-7. You will see a prompt on your phone, Tap on the always allow this PC option and tap Ok.
+Aplikasi pada dasarnya, harusnya berfungsi untuk menjaga stabilitas sistem dan memperkuat daya tahan baterai di antara berbagai layanan / fitur lainnya. Namun setelah diperhatikan, aplikasi ini juga memiliki telemetri yang mengirim data ke China.
 
->	On Linux
-Get the linux version here - https://github.com/Sid127/Nokia-Debloater/releases
+Saya sudah membahas mengenai hal ini dihalaman blog saya https://www.blogsayugi.com/2020/11/cara-mengatasi-internet-lambat-di.html
 
-1. Install adb-fastboot tools using the link above, or if you're running an Ubuntu based system, run the following command in the terminal - "sudo apt-get install android-tools-adb android-tools-fastboot"
-2. Download "debloat.sh" from the releases section
-3. Open a terminal in the location where you downloaded the debloater. For example, if your file is downloaded in "/home/user/downloads", open a terminal there, or open a regular terminal and run the command "cd /home/user/downloads/"
-4. Connect your phone to the PC.
-5. In the same terminal window from before, run the command "./debloat.sh"; To disable Duraspeed, run "./duraspeed.sh"
-6. You will see a prompt on your phone, Tap on the always allow this PC option and tap Ok.
+**Dan karena itulah script ini dibuat, untuk meningkatkan privasi pengguna dan membuat system lebih baik dibandingkan sebelumnya.**
 
 
-| If you are running adb for the first time, You might get an error like this - *No devices/emulators found*, If you did, Then please ensure that you have tapped the ok option on the prompt from your phone. 
+## Nokia seharusnya sudah berhentu untuk menggunakan evenwell services/apps, dan berikut alasan kenapa kita harus menghapus aplikasi ini. 
+
+1. Saya tidak ingin ada aplikasi mati yang telah dihentikan nokia melakukan pengintaian history di sistem saya.
+2. Aplikasi tersebut tidak seharusnya ada di perangkat saya sejak awal.
+
+## Untuk menggunakan Script ini, kamu harus memiliki beberapa hal berikut:
+1. Sebuah ponsel Nokia (dalam kasus ini adalah Nokia 6.1 Plus Region Indonesia (Model: TA-1116). 
+2. ADB Fastboot Portable yang dapat kamu download pada halaman berikut : https://androidfilehost.com/?fid=6006931924117923181
+3. Script Debloater ini. 
+4. PC/Laptop dengan system operasi Windows 7 atau yang lebih baru. 
+
+
+
+# Tutorial Penggunaan
+> Aktifkan USB Debuggin - 
+1. Silahkan kamu masuk ke halaman Settings >
+2. Masuk ke **System > About Phone > Build number**
+3. Tekan **Build Number** 7 kali sampai kamu melihat pesan *You are now a developer*.
+4. Selanjutnya, silahkan masuk ke **System > Advanced > Developer options > Enable USB Debugging**
+5. Setelah semuanya disiapkan dan USB Debigging diaktifkan, silahkan kamu beralih ke PC yang sudah kamu siapkan. 
+
+> Menyiapkan Script Debloater
+>	Di PC Windows
+1. Silahkan kamu download ADB Fastboot pada link diatas.
+2. Extract seluruh isi dari file .zip dan simpan dalam folder bernama adb (***PASTIKAN SELURUH FILE YANG DI EXTRACT SUDAH LENGKAP DAN SESUAI DENGAN APA YANG ADA DI FILE .ZIP***)
+3. Silahkan kamu download Script dari bagian Release. 
+4. Masukkan Script pada folder adb yang telah dibuat pada langkah 2 sebelumnya.
+5. Koneksikan Nokia 6.1 Plus kamu melalui kabel USB. 
+6. Double click pada Script yang telah di download sebelumnya. 
+7. Kamu mungkin akan mendapati pesan di Nokia 6.1 Plus kamu, silahkan klik always allow this PC dan selanjutnya klik Ok.
+
+
+*Jika kamu pertama kali menjalankan script ini, kamu mungkinkan akan mendapati pesan error - *No devices/emulators found*, jika iya, pastikan kamu sudah melakukan langkah 7 diatas.
 
 ## F.A.Q
 
-1. Do I need root or an unlocked bootloader?
-> No
+1. Perlukan melakukan Root dan melakukan Unlock Bootloader?
+> Tidak
 
-2. What can I expect from the debloating measures?
-> Better Privacy and security, Possibly better battery life and performance
+2. Apa yang didapatkan dengan script debloater ini?
+> Privasi yang lebih baik, daya tahan battery yang lebih lama, dan performa yang lebih meningkat. 
 
-3. Can I revert the changes?
-> Yes, You have few options
- - Using the Rebloat option from the script
- - Reinstalling all the rebloated apps that were purged
- - Factory Reset
+3. Bisakah mengembalikan perubahan dari script ini?
+> Bisa, dan ada beberapa opsi untuk melakukan hal tersebut. 
+ - Menggunakan fitur Rebloated yang ada di Script
+ - Reinstall aplikasi Rebloated yang telah dihapus. 
+ - Factory Reset (paling direkomendasikan).
 
-4. Will I lose data by debloating?
-> No you will not. 
+4. Apakah dengan melakukan debloated kita akan kehilangan data?
+> Tidak, saya sudah coba dan pastikan sendiri. 
 
-5. Are there possibilities of bricking my device?
-> Extremely Rare.
+5. Kemungkinan perangkat akan rusak akibat script ini?
+> Sangat, sangat jarang sekali. 
 
-## TO-Do List 
-
+## To-Do List pengembangan script ini. 
+> Original Script
 - [x] Implement a way to re-install the debloated apps
 - [x] Add options to debloat google apps
 - [x] Add options to debloat specific apps
@@ -91,29 +93,32 @@ Get the linux version here - https://github.com/Sid127/Nokia-Debloater/releases
 - [x] Combine Linux scripts into one script
 - [x] Port script to MacOS
 
-## Screenshots
-
-![Screenshot (9)](https://user-images.githubusercontent.com/43717642/84499311-fbbe9380-accf-11ea-9f51-e7cedae51c3e.png)
-| App Opening screen
-
-![Screenshot (10)](https://user-images.githubusercontent.com/43717642/84499338-0547fb80-acd0-11ea-8326-ff896254fe10.png)
-| The main menu
-
-![Screenshot (11)](https://user-images.githubusercontent.com/43717642/84499341-0711bf00-acd0-11ea-828a-5d5a68bf0775.png)
-| Debloating
+> Fork by Gylang
+- [x] Fork dari https://github.com/thanuj10/Nokia-Debloater
+- [x] Mengalih bahasa-kan Text Readme dengan penyesuaian untuk perangkat Nokia 6.1 Plus Region Indonesia (Model: TA-1116), untuk model Nokia lain bisa mengikuti sumber https://github.com/thanuj10/Nokia-Debloater
+- [x] Menambahkan aplikasi Babe dan PicMix sebagai daftar aplikasi bloated yang akan dihapus. 
+- [-] Sedang mencari aplikasi bloated lainnya. 
 
 
-## Further reading 
+## Informasi mengenai hal ini bisa dilihat di
 
 - https://dontkillmyapp.com/nokia
-(**One of the main reasons I wanted to create this script**)
+(**Alasan utama developer pertama membuat script ini**)
 
 - https://nokiamob.net/2019/08/18/rumor-hmd-plans-to-remove-evenwell-software-from-all-nokia-devices/
 
 - https://medium.com/@roundedeverett/who-is-nokia-cb24ecbc52a9
 - https://community.phones.nokia.com/discussion/51246/tapping-into-android-pies-adaptive-battery-for-optimum-battery-performance
-(**This is the official forum announcement stating they've disabled the evenwell apps, But did they?**)
+(**Pengumuman resmi bahwa Nokia telah menghapus dan menonaktifkan evenwell apps, tapi apakah iya? karena nyatanya aplikasi masih tetap ada!**)
 
 - https://www.reddit.com/r/Nokia7Plus/comments/apql58/ok_i_have_to_admit_disabling_evenwell_power_apps/
+
+- https://www.blogsayugi.com/2020/11/cara-mengatasi-internet-lambat-di.html
+(**Saya sudah membahas mengenai masalah bloatware system yang melambatkan koneksi internet saya**)
+
+#Thanks to 
+- Thanuj10 for creating this Script - https://github.com/thanuj10/Nokia-Debloater
+- Sid127 for Linux/Mac Version - https://github.com/Sid127/Nokia-Debloater/releases
+- And other developer and Nokia Users. 
 
 
