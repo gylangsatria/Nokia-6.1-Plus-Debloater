@@ -28,14 +28,14 @@ del devices.txt
 
 IF "%devicecount%"=="1" (
 	echo %divider%
-    ECHO No devices found. Please make sure your device is connected, USB debugging is enabled, and that they are authorised%NL%^(check screen for prompt^), then run the script again
+    ECHO Tidak ditemukan perangkat. Mohon pastikan bahwa perangkat sudah terhubung, silahkan cek kembali kabel USB dan pastikan USB debugging telah diaktifkan, pastikan juga bahwa kamu sudah mengijinkan USB Debugging dalam Prompt yang tampil%NL%^(Silahkan cek apakah sudah ada prompt dan pastikan klik pada always allow this PC^), jika sudah silahkan jalankan script kembali
 	echo %divider%
 	pause
 	EXIT /B 0
 )
 IF "%devicecount%" NEQ "2" (
 	echo %divider%
-    ECHO Multiple devices found, please disconnect all but the device you wish to use debloater script on, then run the script again
+    ECHO Lebih dari dua perangkat ditemukan, mohon untuk tidak menghubungkan perangkat lain, selain perangkat yang akan di debloat, jika sudah jalankan script kembali. 
 	echo %divider%
 	pause
 	EXIT /B 0
@@ -49,7 +49,7 @@ for /F "delims=" %%a in ('adb.exe shell getprop ro.build.id') do set ID=%%a
 echo %NL%Detected: %DEVICE% (%PRODUCT%)
 echo Firmware: %ID%
 
-echo %NL%Hello! This script can debloat your %MODEL% off all the unwanted bloatware when used properly
+echo %NL%Hallo sayang (kalo kamu cewek)! Script ini akan melakukan menghapus aplikasi Bloatware pada perangkat %MODEL%
 
 echo.
 pause.
@@ -86,6 +86,7 @@ cls
 echo %NL%Debloat
 echo 1.Stock Nokia
 echo 2.Custom
+echo 3.Babe & PicMix
 echo 0.Back
 
 echo.
@@ -93,6 +94,7 @@ set /p choice= Enter your option:
 
 if '%choice%'=='1' goto evenwell
 if '%choice%'=='2' goto custom
+if '%choice%'=='3' goto Babe dan PicMix
 if '%choice%'=='0' goto menu
 
 goto Debloat
@@ -104,18 +106,18 @@ cls
 
 if "%BRAND%" NEQ "Nokia" (
 	echo %NL%%divider%
-	 ECHO You probably don't have Evenwell bloatware. Aborting...
+	 ECHO Aplikasi Evenwell mungkin tidak ada diperangkat kamu. Membatalkan misi...
  	echo %divider%
 	pause
 	goto Debloat
 )
 
-echo REMINDER: By using this script, You hereby agree you are responsible for any damages that occur to your %MODEL%%NL%I, the author will absolutely under no circumstances take responsibilty if you manage to brick your device
+echo PENGINGAT: Menggunakan script ini berarti kamu sendiri bertanggung jawab atas apa yang kamu lakukan di perangkat %MODEL%%NL%I, segala hal, kerusakan, kehilangan data dan lainnya bukan sepenuhnya tanggung jawab pembuat script
 
 echo.
 pause
 
-echo %NL%Debloating (uninstalling quite a few packages, standby a minute or less)...
+echo %NL%Debloating (uninstalling beberapa packages, silahkan tunggu sampai proses ini selesai)...
 
 echo.
 adb.exe shell pm uninstall --user 0 com.evenwell.DbgCfgTool
@@ -215,11 +217,11 @@ adb.exe shell pm uninstall --user 0 com.evenwell.powersaving.g3.overlay.base
 adb.exe shell pm uninstall --user 0 com.evenwell.batteryprotect.overlay.d.base.s600id
 adb.exe shell pm uninstall --user 0 com.evenwell.nps.overlay.d.base.s600id
 
-echo %NL%The debloating is now finished. If you want, set your phone to silent to prevent startup tone%NL%Press any key to reboot your phone . . .
+echo %NL%Penghapusan selesai. Jika kamu mau, silahkan aktifkan mode silent agar suara Startup Nokia tidak terdengar, %NL%Silahkan klik tombol apapun untuk merestart perangkat . . .
 
 pause>nul
 
-echo %NL%Rebooting Phone . . .
+echo %NL%Restarting . . .
 
 echo.
 adb.exe reboot
@@ -231,7 +233,7 @@ exit
 :custom
 cls
 
-echo REMINDER: By using this script, You hereby agree you are responsible for any damages that occur to your %MODEL%%NL%I, the author will absolutely under no circumstances take responsibilty if you manage to brick your device
+echo PENGINGAT: Menggunakan script ini berarti kamu sendiri bertanggung jawab atas apa yang kamu lakukan di perangkat %MODEL%%NL%I, segala hal, kerusakan, kehilangan data dan lainnya bukan sepenuhnya tanggung jawab pembuat script
 
 echo.
 pause
