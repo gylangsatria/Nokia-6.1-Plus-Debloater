@@ -285,8 +285,8 @@ adb.exe shell cmd package install-existing --user 0 com.evenwell.retaildemoapp
 adb.exe shell cmd package install-existing --user 0 com.evenwell.retaildemoapp.overlay.base x
 adb.exe shell cmd package install-existing --user 0 com.evenwell.PowerMonitor
 adb.exe shell cmd package install-existing --user 0 com.evenwell.PowerMonitor.overlay.base
-adb.exe shell cmd package install-existing --user 0 com.evenwell.telecom.data.overlay.base.s600ww
-adb.exe shell cmd package install-existing --user 0 com.evenwell.telecom.data.overlay.base.s600id
+adb.exe shell cmd package install-existing --user 0 com.evenwell.telecom.data.overlay.base
+adb.exe shell cmd package install-existing --user 0 com.evenwell.telecom.data.overlay.d.base.s600id
 adb.exe shell cmd package install-existing --user 0 com.evenwell.nps
 adb.exe shell cmd package install-existing --user 0 com.evenwell.nps.overlay.base
 adb.exe shell cmd package install-existing --user 0 com.evenwell.stbmonitor
@@ -311,8 +311,8 @@ adb.exe shell cmd package install-existing --user 0 com.evenwell.legalterm.overl
 adb.exe shell cmd package install-existing --user 0 com.evenwell.managedprovisioning.overlay.base
 adb.exe shell cmd package install-existing --user 0 com.evenwell.phone.overlay.base
 adb.exe shell cmd package install-existing --user 0 com.evenwell.phone.overlay.d.base.s600id
-adb.exe shell cmd package install-existing --user 0 com.evenwell.data.overlay.base
-adb.exe shell cmd package install-existing --user 0 com.evenwell.data.overlay.d.base.s600id
+adb.exe shell cmd package install-existing --user 0 com.evenwell.settings.data.overlay.base
+adb.exe shell cmd package install-existing --user 0 com.evenwell.settings.data.overlay.d.base.s600id
 
 echo %NL%The rebloating process is now finished. Press any key to reboot your phone . . .
 
