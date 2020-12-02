@@ -45,9 +45,11 @@ for /F "delims=" %%a in ('adb.exe shell getprop ro.product.device') do set DEVIC
 for /F "delims=" %%a in ('adb.exe shell getprop ro.build.product') do set PRODUCT=%%a
 for /F "delims=" %%a in ('adb.exe shell getprop ro.build.id') do set ID=%%a
 
+echo.
 echo %NL%Detected: %DEVICE% (%PRODUCT%)
 echo Firmware: %ID%
 
+echo.
 echo %NL%Hallo sayang (kalo kamu cewek)! Script ini akan melakukan penghapusan aplikasi Bloatware pada perangkat %MODEL%
 
 echo.
@@ -208,7 +210,7 @@ adb.exe shell pm uninstall --user 0 com.evenwell.powersaving.g3.overlay.base
 adb.exe shell pm uninstall --user 0 com.evenwell.batteryprotect.overlay.d.base.s600id
 adb.exe shell pm uninstall --user 0 com.evenwell.nps.overlay.d.base.s600id
 
-echo %NL%Penghapusan selesai. Jika kamu mau, silahkan aktifkan mode silent agar suara Startup Nokia tidak terdengar, %NL%Silahkan klik tombol apapun untuk merestart perangkat . . .
+echo %NL%Jika status "Success" penghapusan selesai, jika status "Failure" aplikasi tidak tersedia/terinstall. %NL%Silahkan klik tombol apapun untuk merestart perangkat . . .
 
 pause>nul
 
@@ -282,7 +284,8 @@ echo.
 adb.exe shell pm uninstall --user 0 id.co.babe
 adb.exe shell pm uninstall --user 0 com.picmix.mobile
 
-echo %NL%Penghapusan selesai. Jika kamu mau, silahkan aktifkan mode silent agar suara Startup Nokia tidak terdengar, %NL%Silahkan klik tombol apapun untuk merestart perangkat . . .
+echo.
+echo %NL%Jika status "Success" penghapusan selesai, jika status "Failure" aplikasi tidak tersedia/terinstall, %NL%Silahkan klik tombol apapun untuk merestart perangkat . . .
 
 pause>nul
 
@@ -483,11 +486,12 @@ echo.
 adb.exe shell cmd package install-existing --user 0 id.co.babe
 adb.exe shell cmd package install-existing --user 0 com.picmix.mobile
 
+echo.
 echo %NL%Reinstalling telah selesai, silahkan klik tombol apapun untuk melakukan restart perangkat . . .
 
 pause>nul
 
-echo %NL%Perangkat kamu melakukan restartE . . .
+echo %NL%Perangkat kamu melakukan restart . . .
 adb.exe shell reboot
 
 echo.
