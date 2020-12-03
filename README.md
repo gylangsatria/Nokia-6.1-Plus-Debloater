@@ -108,69 +108,61 @@ Saya sudah membahas mengenai hal ini dihalaman blog saya https://www.blogsayugi.
 
 ## Aplikasi Yang Dihapus
 
-Bloatware List (Evenwell)
------------- 
-com.evenwell.DbgCfgTool 
-com.evenwell.pushagent 
-com.evenwell.retaildemoapp 
-com.evenwell.PowerMonitor
-com.evenwell.nps
-com.evenwell.stbmonitor
-com.evenwell.stbmonitor.data.overlay.base 
-com.evenwell.autoregistration
-com.evenwell.batteryprotect
-com.evenwell.dataagent 
-com.evenwell.AprUploadService.data.overlay.base 
-com.evenwell.CPClient.overlay.base 
-com.evenwell.DbgCfgTool.overlay.base 
-com.evenwell.DeviceMonitorControl.data.overlay.base
-com.evenwell.PowerMonitor.overlay.base 
-com.evenwell.SetupWizard.overlay.base 
-com.evenwell.SetupWizard.overlay.d.base.s600id 
-com.evenwell.autoregistration.overlay.base 
-com.evenwell.batteryprotect.overlay.base 
-com.evenwell.bokeheditor.overlay.base 
-com.evenwell.custmanager.data.overlay.base 
-com.evenwell.dataagent.overlay.base 
-com.evenwell.factorywizard.overlay.base 
-com.evenwell.fmradio.overlay.base 
-com.evenwell.fmradio.overlay.d.base.s600id 
-com.evenwell.legalterm.overlay.base 
-com.evenwell.managedprovisioning.overlay.base 
-com.evenwell.nps.overlay.base 
-com.evenwell.partnerbrowsercustomizations.overlay.base 
-com.evenwell.phone.overlay.base 
-com.evenwell.phone.overlay.d.base.s600id 
-com.evenwell.pushagent.overlay.base 
-com.evenwell.retaildemoapp.overlay.base 
-com.evenwell.settings.data.overlay.base 
-com.evenwell.settings.data.overlay.d.base.s600id 
-com.evenwell.telecom.data.overlay.base 
-com.evenwell.telecom.data.overlay.d.base.s600id 
-com.evenwell.SetupWizard 
-com.evenwell.bokeheditor 
-com.evenwell.CPClient 
-com.evenwell.DeviceMonitorControl 
-com.evenwell.fqc 
-com.evenwell.legalterm 
-com.evenwell.mappartner 
-com.evenwell.custmanager 
-com.evenwell.factorywizard 
-com.evenwell.AprUploadService 
-
-
-Bloatware List (Nokia 6.1 Plus Stock) 
------------- 
-id.co.babe 
-com.picmix.mobile 
-
-
-|Bloatware List (Google Apps) |
-|------------|
-|com.android.chrome |
-|com.android.partnerbrowsercustomizations |
-|com.google.android.apps.magazines |
-|com.google.android.youtube |
+Bloatware List | Status
+------------ | -------------
+com.evenwell.DbgCfgTool | Added
+com.evenwell.pushagent | Added
+com.evenwell.retaildemoapp | Added
+com.evenwell.PowerMonitor | Added
+com.evenwell.nps | Added
+com.evenwell.stbmonitor | Added
+com.evenwell.stbmonitor.data.overlay.base | Added
+com.evenwell.autoregistration | Added
+com.evenwell.batteryprotect | Added
+com.evenwell.dataagent | Added
+com.evenwell.AprUploadService.data.overlay.base | Added
+com.evenwell.CPClient.overlay.base | Added
+com.evenwell.DbgCfgTool.overlay.base | Added
+com.evenwell.DeviceMonitorControl.data.overlay.base | Added
+com.evenwell.PowerMonitor.overlay.base | Added
+com.evenwell.SetupWizard.overlay.base | Added
+com.evenwell.SetupWizard.overlay.d.base.s600id | Added
+com.evenwell.autoregistration.overlay.base | Added
+com.evenwell.batteryprotect.overlay.base | Added
+com.evenwell.bokeheditor.overlay.base | Added
+com.evenwell.custmanager.data.overlay.base | Added
+com.evenwell.dataagent.overlay.base | Added
+com.evenwell.factorywizard.overlay.base | Added
+com.evenwell.fmradio.overlay.base | Added
+com.evenwell.fmradio.overlay.d.base.s600id | Added
+com.evenwell.legalterm.overlay.base | Added
+com.evenwell.managedprovisioning.overlay.base | Added
+com.evenwell.nps.overlay.base | Added
+com.evenwell.partnerbrowsercustomizations.overlay.base | Added
+com.evenwell.phone.overlay.base | Added
+com.evenwell.phone.overlay.d.base.s600id | Added
+com.evenwell.pushagent.overlay.base | Added
+com.evenwell.retaildemoapp.overlay.base | Added
+com.evenwell.settings.data.overlay.base | Added
+com.evenwell.settings.data.overlay.d.base.s600id | Added
+com.evenwell.telecom.data.overlay.base | Added
+com.evenwell.telecom.data.overlay.d.base.s600id | Added
+com.evenwell.SetupWizard | Added
+com.evenwell.bokeheditor | Added
+com.evenwell.CPClient | Added
+com.evenwell.DeviceMonitorControl | Added
+com.evenwell.fqc | Added
+com.evenwell.legalterm | Added
+com.evenwell.mappartner | Added
+com.evenwell.custmanager | Added
+com.evenwell.factorywizard | Added
+com.evenwell.AprUploadService | Added
+id.co.babe | Added
+com.picmix.mobile | Added
+com.android.chrome | Added
+com.android.partnerbrowsercustomizations | Added
+com.google.android.apps.magazines | Added
+com.google.android.youtube | Added
 
 
 
