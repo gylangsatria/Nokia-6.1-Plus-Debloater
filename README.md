@@ -165,12 +165,12 @@ id.co.babe
 com.picmix.mobile 
 
 
-Bloatware List (Google Apps) 
------------- 
-com.android.chrome 
-com.android.partnerbrowsercustomizations 
-com.google.android.apps.magazines 
-com.google.android.youtube
+|Bloatware List (Google Apps) |
+|------------|
+|com.android.chrome |
+|com.android.partnerbrowsercustomizations |
+|com.google.android.apps.magazines |
+|com.google.android.youtube |
 
 
 
