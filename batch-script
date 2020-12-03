@@ -98,6 +98,7 @@ echo %NL%Debloat
 echo 1.Evenwell
 echo 2.Custom
 echo 3.Babe dan PicMix
+echo 4.Google Apps
 echo 0.Back
 
 echo.
@@ -106,6 +107,7 @@ set /p choice= Enter your option:
 if '%choice%'=='1' goto evenwell
 if '%choice%'=='2' goto custom
 if '%choice%'=='3' goto babe
+if '%choice%'=='4' goto google
 if '%choice%'=='0' goto menu
 
 goto Debloat
@@ -160,6 +162,16 @@ adb.exe shell pm uninstall --user 0 com.evenwell.settings.data.overlay.base
 adb.exe shell pm uninstall --user 0 com.evenwell.settings.data.overlay.d.base.s600id
 adb.exe shell pm uninstall --user 0 com.evenwell.telecom.data.overlay.base
 adb.exe shell pm uninstall --user 0 com.evenwell.telecom.data.overlay.d.base.s600id
+adb.exe shell pm uninstall --user 0 com.evenwell.SetupWizard
+adb.exe shell pm uninstall --user 0 com.evenwell.bokeheditor
+adb.exe shell pm uninstall --user 0 com.evenwell.CPClient
+adb.exe shell pm uninstall --user 0 com.evenwell.DeviceMonitorControl
+adb.exe shell pm uninstall --user 0 com.evenwell.fqc
+adb.exe shell pm uninstall --user 0 com.evenwell.legalterm
+adb.exe shell pm uninstall --user 0 com.evenwell.mappartner
+adb.exe shell pm uninstall --user 0 com.evenwell.custmanager
+adb.exe shell pm uninstall --user 0 com.evenwell.factorywizard
+adb.exe shell pm uninstall --user 0 com.evenwell.AprUploadService
 
 echo %NL%Jika status "Success" penghapusan selesai, jika status "Failure" aplikasi tidak tersedia/terinstall. %NL%Silahkan klik tombol apapun untuk merestart perangkat . . .
 
@@ -249,13 +261,43 @@ echo.
 exit
 ----------------------------------------------------
 
+:google
+cls
+
+echo PENGINGAT: Menggunakan script ini berarti kamu sendiri bertanggung jawab atas apa yang kamu lakukan di perangkat %MODEL%%NL%, segala hal, kerusakan, kehilangan data dan lainnya bukan sepenuhnya tanggung jawab pembuat script
+
+echo.
+pause
+
+echo %NL%Debloating (uninstalling beberapa packages, silahkan tunggu sampai proses ini selesai)...
+
+echo.
+adb.exe shell pm uninstall --user 0 com.android.chrome
+adb.exe shell pm uninstall --user 0 com.android.partnerbrowsercustomizations
+adb.exe shell pm uninstall --user 0 com.google.android.apps.magazines
+adb.exe shell pm uninstall --user 0 com.google.android.youtube
+
+echo %NL%Jika status "Success" penghapusan selesai, jika status "Failure" aplikasi tidak tersedia/terinstall. %NL%Silahkan klik tombol apapun untuk merestart perangkat . . .
+
+pause>nul
+
+echo %NL%Restarting . . .
+
+echo.
+adb.exe reboot
+
+echo.
+exit
+----------------------------------------------------
+
 :Rebloat
 cls
 
 echo %NL%Rebloat
-echo 1.Evenwell Stock Nokia
+echo 1.Evenwell
 echo 2.Custom
 echo 3.Babe
+echo 4.Google Apps
 echo 0.Back
 
 echo.
@@ -264,6 +306,7 @@ set /p choice= Enter your option:
 if '%choice%'=='1' goto evenwell2
 if '%choice%'=='2' goto custom2
 if '%choice%'=='3' goto babe2
+if '%choice%'=='4' goto google2
 if '%choice%'=='0' goto menu
 
 goto Rebloat
@@ -313,6 +356,16 @@ adb.exe shell cmd package install-existing --user 0 com.evenwell.phone.overlay.b
 adb.exe shell cmd package install-existing --user 0 com.evenwell.phone.overlay.d.base.s600id
 adb.exe shell cmd package install-existing --user 0 com.evenwell.settings.data.overlay.base
 adb.exe shell cmd package install-existing --user 0 com.evenwell.settings.data.overlay.d.base.s600id
+adb.exe shell cmd package install-existing --user 0 com.evenwell.bokeheditor
+adb.exe shell cmd package install-existing --user 0 com.evenwell.SetupWizard
+adb.exe shell cmd package install-existing --user 0 com.evenwell.CPClient
+adb.exe shell cmd package install-existing --user 0 com.evenwell.DeviceMonitorControl
+adb.exe shell cmd package install-existing --user 0 com.evenwell.fqc
+adb.exe shell cmd package install-existing --user 0 com.evenwell.legalterm
+adb.exe shell cmd package install-existing --user 0 com.evenwell.mappartner
+adb.exe shell cmd package install-existing --user 0 com.evenwell.custmanager
+adb.exe shell cmd package install-existing --user 0 com.evenwell.factorywizard
+adb.exe shell cmd package install-existing --user 0 com.evenwell.AprUploadService
 
 echo %NL%The rebloating process is now finished. Press any key to reboot your phone . . .
 
@@ -384,6 +437,29 @@ echo %NL%Reinstalling telah selesai, silahkan klik tombol apapun untuk melakukan
 pause>nul
 
 echo %NL%Perangkat kamu melakukan restart . . .
+adb.exe shell reboot
+
+echo.
+exit
+
+--------------------------------------------------------
+
+:google2
+cls
+
+echo %NL%Reinstalling the debloated evenwell creepy apps back to your %MODEL% . . .
+
+echo.
+adb.exe shell cmd package install-existing --user 0 com.android.chrome
+adb.exe shell cmd package install-existing --user 0 com.android.partnerbrowsercustomizations
+adb.exe shell cmd package install-existing --user 0 com.google.android.apps.magazines
+adb.exe shell cmd package install-existing --user 0 com.google.android.youtube
+
+echo %NL%The rebloating process is now finished. Press any key to reboot your phone . . .
+
+pause>nul
+
+echo %NL%Your phone is rebooting . . .
 adb.exe shell reboot
 
 echo.
