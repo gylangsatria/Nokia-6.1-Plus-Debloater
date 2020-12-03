@@ -102,7 +102,75 @@ Saya sudah membahas mengenai hal ini dihalaman blog saya https://www.blogsayugi.
 - [x] Fork dari https://github.com/thanuj10/Nokia-Debloater
 - [x] Mengalih bahasa-kan Text Readme dengan penyesuaian untuk perangkat Nokia 6.1 Plus Region Indonesia (Model: TA-1116), untuk model Nokia lain bisa mengikuti sumber https://github.com/thanuj10/Nokia-Debloater
 - [x] Menambahkan aplikasi Babe dan PicMix sebagai daftar aplikasi bloated yang akan dihapus. 
+- [x] Menambahkan lebih banyak aplikasi Evenwell dan beberapa aplikasi Google Apps 
 - [-] Sedang mencari aplikasi bloated lainnya. 
+
+
+## Aplikasi Yang Dihapus
+
+Bloatware List (Evenwell) | Status
+------------ | -------------
+com.evenwell.DbgCfgTool | Content from cell 2 | Removed
+com.evenwell.pushagent | Content in the second column | Removed
+com.evenwell.retaildemoapp | Removed
+com.evenwell.PowerMonitor | Removed
+com.evenwell.nps | Removed
+com.evenwell.stbmonitor | Removed
+com.evenwell.stbmonitor.data.overlay.base | Removed
+com.evenwell.autoregistration | Removed
+com.evenwell.batteryprotect | Removed
+com.evenwell.dataagent | Removed
+com.evenwell.AprUploadService.data.overlay.base | Removed
+com.evenwell.CPClient.overlay.base | Removed
+com.evenwell.DbgCfgTool.overlay.base | Removed
+com.evenwell.DeviceMonitorControl.data.overlay.base | Removed
+com.evenwell.PowerMonitor.overlay.base | Removed
+com.evenwell.SetupWizard.overlay.base | Removed
+com.evenwell.SetupWizard.overlay.d.base.s600id | Removed
+com.evenwell.autoregistration.overlay.base | Removed
+com.evenwell.batteryprotect.overlay.base | Removed
+com.evenwell.bokeheditor.overlay.base | Removed
+com.evenwell.custmanager.data.overlay.base | Removed
+com.evenwell.dataagent.overlay.base | Removed
+com.evenwell.factorywizard.overlay.base | Removed
+com.evenwell.fmradio.overlay.base | Removed
+com.evenwell.fmradio.overlay.d.base.s600id | Removed
+com.evenwell.legalterm.overlay.base | Removed
+com.evenwell.managedprovisioning.overlay.base | Removed
+com.evenwell.nps.overlay.base | Removed
+com.evenwell.partnerbrowsercustomizations.overlay.base | Removed
+com.evenwell.phone.overlay.base | Removed
+com.evenwell.phone.overlay.d.base.s600id | Removed
+com.evenwell.pushagent.overlay.base | Removed
+com.evenwell.retaildemoapp.overlay.base | Removed
+com.evenwell.settings.data.overlay.base | Removed
+com.evenwell.settings.data.overlay.d.base.s600id | Removed
+com.evenwell.telecom.data.overlay.base | Removed
+com.evenwell.telecom.data.overlay.d.base.s600id | Removed
+com.evenwell.SetupWizard | Removed
+com.evenwell.bokeheditor | Removed
+com.evenwell.CPClient | Removed
+com.evenwell.DeviceMonitorControl | Removed
+com.evenwell.fqc | Removed
+com.evenwell.legalterm | Removed
+com.evenwell.mappartner | Removed
+com.evenwell.custmanager | Removed
+com.evenwell.factorywizard | Removed
+com.evenwell.AprUploadService | Removed
+
+
+Bloatware List (Nokia 6.1 Plus Stock) | Status
+------------ | -------------
+id.co.babe | Removed
+com.picmix.mobile | Removed
+
+
+Bloatware List (Google Apps) | Status
+------------ | -------------
+com.android.chrome | Removed
+com.android.partnerbrowsercustomizations | Removed
+com.google.android.apps.magazines | Removed
+com.google.android.youtube | Removed
 
 
 
